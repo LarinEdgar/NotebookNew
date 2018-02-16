@@ -2,5 +2,6 @@
     <string name="app_name">Notebook</string>
     <string name="addContactBtn">Add a new contact</string>
     <string name="saveContact">Save Contact</string>
+    <string name="title_activity_phone_book_row">phoneBookRow</string>
 
 </resources>

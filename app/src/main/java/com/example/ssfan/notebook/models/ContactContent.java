@@ -1,17 +1,27 @@
 package com.example.ssfan.notebook.models;
 
-import android.widget.EditText;
+import android.graphics.Bitmap;
 
-public class Contact {
+public class ContactContent {
 
-    String name;
-    String phoneNumber;
-    String email;
+    private Bitmap avatar;
+    private String name;
+    private String phoneNumber;
+    private String email;
 
-    public Contact(String name, String phoneNumber, String email) {
+    public ContactContent(Bitmap avatar, String name, String phoneNumber, String email) {
+        this.avatar = avatar;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.email = email;
+    }
+
+    public Bitmap getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(Bitmap avatar) {
+        this.avatar = avatar;
     }
 
     public String getName() {
@@ -36,14 +46,5 @@ public class Contact {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    @Override
-    public String toString() {
-        return "Contact{" +
-                "name='" + name + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", email='" + email + '\'' +
-                '}';
     }
 }
